@@ -1,0 +1,50 @@
+[versions]
+agp = "8.5.0"
+kotlin = "1.9.0"
+coreKtx = "1.13.1"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+material = "1.12.0"
+activity = "1.9.1"
+constraintlayout = "2.1.4"
+retrofit = "2.11.0"
+gsonconverter = "2.3.0"
+gson = "2.11.0"
+androidx-livedata-ktx = "2.8.4"
+androidx-lifecycle = "2.8.4"
+roomKtx = "2.6.1"
+kspVersion = "1.9.0-1.0.13"
+room = "2.6.1"
+
+
+
+
+
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+retrofitlib = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+convertgson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "gsonconverter" }
+gsonlib = { module = "com.google.code.gson:gson", version.ref = "gson" }
+lifecycle = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "androidx-lifecycle" }
+livedata = { module = "androidx.lifecycle:lifecycle-livedata-ktx", version.ref = "androidx-livedata-ktx" }
+
+androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" } # kapt
+#androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
+androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
+#androidx-room-testing = { module = "androidx.room:room-testing", version.ref = "room" }
+
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+
